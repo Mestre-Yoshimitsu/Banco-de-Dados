@@ -1,0 +1,15 @@
+package debian.mavenproject2;
+
+import java.sql.*;
+
+public class Mavenproject2 {
+
+    public static void main(String[] args) {
+        try {
+            Connection conexao = ConfigBanco.getConnection();
+            System.out.println("Conexão Aura");
+        } catch (SQLException e) {
+            System.out.println("Deu errado, chapa. Aqui o por quê: " + e.getMessage());
+        }
+    }
+}
