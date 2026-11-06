@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class ConfigBanco {
 
-    private static String url = "jdbc:postgresql://localhost:5432/proebom";
+    private static String url = "jdbc:postgresql://localhost:5432/Locadora2B";
     private static String username = "postgres";
     private static String password = "root";
 

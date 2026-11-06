@@ -5,6 +5,10 @@ import java.sql.*;
 public class Mavenproject2 {
 
     public static void main(String[] args) {
+        Tabelas tabela = new Tabelas();
+        tabela.conectar();
+        
+        
         try {
             Connection conexao = ConfigBanco.getConnection();
             System.out.println("Conexão Aura");
