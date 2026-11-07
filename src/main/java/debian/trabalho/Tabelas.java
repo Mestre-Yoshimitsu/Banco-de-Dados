@@ -1,15 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package debian.mavenproject2;
+
+package debian.trabalho;
 
 import java.sql.*;
 
-/**
- *
- * @author edu
- */
 public class Tabelas {
 
     String sql = """

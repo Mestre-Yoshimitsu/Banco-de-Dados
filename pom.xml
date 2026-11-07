@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>debian</groupId>
-    <artifactId>mavenproject2</artifactId>
+    <artifactId>trabalho</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
     <dependencies>
@@ -15,6 +15,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>26</maven.compiler.release>
-        <exec.mainClass>debian.mavenproject2.Mavenproject2</exec.mainClass>
+        <exec.mainClass>debian.trabalho.Main</exec.mainClass>
     </properties>
+    <name>trabalho</name>
 </project>

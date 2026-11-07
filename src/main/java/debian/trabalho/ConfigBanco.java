@@ -1,4 +1,4 @@
-package debian.mavenproject2;
+package debian.trabalho;
 
 import java.sql.*;
 

@@ -1,8 +1,8 @@
-package debian.mavenproject2;
+package debian.trabalho;
 
 import java.sql.*;
 
-public class Mavenproject2 {
+public class Main {
 
     public static void main(String[] args) {
         Tabelas tabela = new Tabelas();
