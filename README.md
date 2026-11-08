@@ -4,9 +4,11 @@ pgAdmin 4.
 
 Instruções para instalação:
 NetBeans:
-flatpak install flathub org.apache.netbeans
+Windows: baixe no site oficial: https://netbeans.apache.org/front/main/download/nb31/
+Linux: baixe o flatpak para compatibilidade universal: flatpak install flathub org.apache.netbeans
 
 pgAdmin 4:
-flatpak install flathub org.pgadmin.pgadmin4
+Windows: baixe no site oficial: https://www.pgadmin.org/download/pgadmin-4-windows/
+Linux: baixe o flatpak: flatpak install flathub org.pgadmin.pgadmin4
 
 
