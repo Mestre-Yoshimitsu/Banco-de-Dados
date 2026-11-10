@@ -26,8 +26,7 @@ public class PrincipalController extends BaseController{
             Connection conexao = ConfigBanco.getConnection();
             Launcher.setRoot("LocadoraView");
         } catch (SQLException e) {
-            System.out.println("Deu errado, chapa. Aqui o por quê: " + e.getMessage());
-            popUp(bugLabel, e.getMessage());
+            popUp(bugLabel, e.getMessage(), false);
         }
     }
 }

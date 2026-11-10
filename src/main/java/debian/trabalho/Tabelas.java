@@ -24,14 +24,14 @@ public class Tabelas {
                  
                  """;
 
-    public void conectar() {
+    public boolean conectar() {
         try {
             Connection conexao = ConfigBanco.getConnection();
             Statement comando = conexao.createStatement();
             comando.executeUpdate(sql);
-            System.out.println("Sucesso");
+            return true;
         } catch (SQLException e) {
-            System.out.println("Deu errado");
+            return false;
         }
     }
 
