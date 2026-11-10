@@ -1,14 +1,16 @@
-
 package debian.trabalho;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-
-
 public class Tabelas {
 
+    private static Tabelas tabela = new Tabelas();
+
+    public static Tabelas getTabela() {
+        return tabela;
+    }
     String sql = """
                  create table if not exists carro(
                  id serial primary key,
@@ -25,15 +27,12 @@ public class Tabelas {
     public void conectar() {
         try {
             Connection conexao = ConfigBanco.getConnection();
-    Statement comando = conexao.createStatement();
+            Statement comando = conexao.createStatement();
             comando.executeUpdate(sql);
             System.out.println("Sucesso");
-    }
-            catch (SQLException e) {
+        } catch (SQLException e) {
             System.out.println("Deu errado");
-}
+        }
     }
 
-    
 }
-

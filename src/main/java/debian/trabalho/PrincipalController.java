@@ -1,5 +1,33 @@
 package debian.trabalho;
 
-public class PrincipalController {
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
+public class PrincipalController extends BaseController{
+    @FXML
+    private Label bugLabel;
+    @FXML
+    private TextField urlTextField;
+    @FXML
+    private TextField usernameTextField;
+    @FXML
+    private TextField passwordTextField;
+    
+    @FXML
+    private void conectar() throws IOException {
+        ConfigBanco.setUrl(urlTextField.getText());
+        ConfigBanco.setUsername(usernameTextField.getText());
+        ConfigBanco.setPassword(passwordTextField.getText());
+        try {
+            Connection conexao = ConfigBanco.getConnection();
+            Launcher.setRoot("LocadoraView");
+        } catch (SQLException e) {
+            System.out.println("Deu errado, chapa. Aqui o por quê: " + e.getMessage());
+            popUp(bugLabel, e.getMessage());
+        }
+    }
 }
