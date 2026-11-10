@@ -1,14 +1,14 @@
 package debian.trabalho;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 public class Main {
 
     public static void main(String[] args) {
         Tabelas tabela = new Tabelas();
         tabela.conectar();
-        
-        
+
         try {
             Connection conexao = ConfigBanco.getConnection();
             System.out.println("Conexão Aura");
