@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="debian.trabalho.TabelasController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="199.0" layoutY="14.0" text="Criar Tabela">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="222.0" layoutY="288.0" mnemonicParsing="false" onAction="#criarTabela" text="Criar Tabelas">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="tabelasTextArea" layoutX="126.0" layoutY="66.0" prefHeight="200.0" prefWidth="348.0" text="CREATE TABLE IF NOT EXISTS carro (&#10;                id SERIAL PRIMARY KEY,&#10;                modelo VARCHAR(100) NOT NULL,&#10;                marca VARCHAR(60) NOT NULL,&#10;                ano INTEGER NOT NULL,&#10;                valor_diaria NUMERIC(10,2) NOT NULL,&#10;                disponivel BOOLEAN DEFAULT TRUE&#10;            );">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

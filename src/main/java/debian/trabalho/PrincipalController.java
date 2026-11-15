@@ -22,7 +22,7 @@ public class PrincipalController extends BaseController {
         ConfigBanco.setPassword(passwordTextField.getText());
         try {
             Connection conexao = ConfigBanco.getConnection();
-            Launcher.setRoot("LocadoraView");
+            Launcher.setRoot("TabelasView");
             AlertInformacao("Sucesso", "O comando foi executado com sucesso", "Conexão bem sucedida").show();
         } catch (SQLException e) {
             AlertErro("Erro!", "Erro ao conectar ao banco de dados", e.getMessage()).showAndWait();
