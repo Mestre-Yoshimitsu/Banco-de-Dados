@@ -11,6 +11,7 @@ public class BaseController {
         alert.setContentText(conteudo);
         return alert;
     }
+
     public Alert AlertInformacao(String titulo, String cabecalho, String conteudo) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(titulo);
@@ -18,6 +19,7 @@ public class BaseController {
         alert.setContentText(conteudo);
         return alert;
     }
+
     public Alert AlertConfirmacao(String titulo, String cabecalho, String conteudo) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle(titulo);
@@ -25,5 +27,5 @@ public class BaseController {
         alert.setContentText(conteudo);
         return alert;
     }
-    
+
 }
