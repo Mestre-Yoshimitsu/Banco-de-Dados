@@ -12,31 +12,31 @@ import java.sql.*;
  */
 public class Tabelas {
 
-    String sql = """
-                 create table if not exists carro(
-                 id serial primary key,
-                 modelo varchar(200),
-                 marca varchar(200),
-                 ano integer,
-                 placa varchar(8),
-                 valor_diaria numeric(10,2),
-                 disponivel boolean default true
-                 );
-                 
-                 """;
+    public static void criarTabela() {
 
-    public void conectar() {
-        try {
-            Connection conexao = ConfigBanco.getConnection();
-    Statement comando = conexao.createStatement();
+        String sql = """
+            CREATE TABLE IF NOT EXISTS carro (
+                id SERIAL PRIMARY KEY,
+                modelo VARCHAR(100) NOT NULL,
+                marca VARCHAR(60) NOT NULL,
+                ano INTEGER NOT NULL,
+                valor_diaria NUMERIC(10,2) NOT NULL,
+                disponivel BOOLEAN DEFAULT TRUE
+            );
+        """;
+
+        try (
+                Connection Conexao = ConfigBanco.getConnection(); Statement comando = Conexao.createStatement()) {
+
             comando.executeUpdate(sql);
-            System.out.println("Sucesso");
-    }
-            catch (SQLException e) {
-            System.out.println("Deu errado");
-}
+
+            System.out.println("Tabela carro criada com sucesso!");
+
+        } catch (SQLException e) {
+
+            System.out.println("Erro ao criar tabela: " + e.getMessage());
+
+        }
     }
 
-    
 }
-
