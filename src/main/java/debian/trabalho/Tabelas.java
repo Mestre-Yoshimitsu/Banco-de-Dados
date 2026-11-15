@@ -1,9 +1,5 @@
 package debian.trabalho;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 public class Tabelas {
 
     private static Tabelas tabela = new Tabelas();
@@ -23,16 +19,4 @@ public class Tabelas {
                  );
                  
                  """;
-
-    public boolean conectar() {
-        try {
-            Connection conexao = ConfigBanco.getConnection();
-            Statement comando = conexao.createStatement();
-            comando.executeUpdate(sql);
-            return true;
-        } catch (SQLException e) {
-            return false;
-        }
-    }
-
 }

@@ -17,10 +17,5 @@
             <Font size="21.0" />
          </font>
       </Button>
-      <Label fx:id="reportLabel" alignment="CENTER" layoutX="264.0" layoutY="123.0" opacity="0.0" text="reportLabel">
-         <font>
-            <Font size="17.0" />
-         </font>
-      </Label>
    </children>
 </AnchorPane>

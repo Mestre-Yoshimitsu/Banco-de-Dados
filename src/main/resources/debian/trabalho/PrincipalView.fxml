@@ -53,10 +53,5 @@
             </TextField>
          </children>
       </VBox>
-      <Label fx:id="bugLabel" layoutX="14.0" layoutY="56.0" opacity="0.0" text="bugLabel">
-         <font>
-            <Font size="17.0" />
-         </font>
-      </Label>
    </children>
 </AnchorPane>

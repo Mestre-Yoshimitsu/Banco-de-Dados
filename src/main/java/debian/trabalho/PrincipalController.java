@@ -4,12 +4,9 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class PrincipalController extends BaseController{
-    @FXML
-    private Label bugLabel;
     @FXML
     private TextField urlTextField;
     @FXML
@@ -26,7 +23,7 @@ public class PrincipalController extends BaseController{
             Connection conexao = ConfigBanco.getConnection();
             Launcher.setRoot("LocadoraView");
         } catch (SQLException e) {
-            popUp(bugLabel, e.getMessage(), false);
+            AlertErro("Erro!", "Erro ao conectar ao banco de dados", e.getMessage()).showAndWait();
         }
     }
 }
