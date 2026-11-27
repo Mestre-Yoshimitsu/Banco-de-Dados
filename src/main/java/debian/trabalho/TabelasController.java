@@ -23,7 +23,7 @@ public class TabelasController extends BaseController {
             comando.executeUpdate(sqlScript);
 
             AlertInformacao("Sucesso", "O comando foi executado com sucesso", "Tabela criada com sucesso!").show();
-            Launcher.setRoot("LocadoraView");
+            Launcher.setRoot("CarroView");
         } catch (SQLException e) {
             AlertErro("Erro!", "Falha ao executar o comando", e.getMessage()).showAndWait();
 
