@@ -29,7 +29,7 @@
             <Label text="ID Cliente:" />
             <TextField fx:id="idClienteTextField" />
          </children></VBox>
-      <Button layoutX="252.0" layoutY="340.0" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar">
+      <Button layoutX="252.0" layoutY="340.0" mnemonicParsing="false" onAction="#cadastrarAluguel" text="Cadastrar">
          <font>
             <Font size="16.0" />
          </font>
